@@ -20,24 +20,24 @@ export default function App() {
         <View style={styles.transactions}>
 
         <View style={styles.buttons}><Image source={require('./assets/send.png')} style={styles.btnimg}/></View>
-          <Text>Sent</Text>
+          <Text  style={styles.btntxt}>Sent</Text>
         </View>
          <View style={styles.transactions}>
 
         <View style={styles.buttons}><Image source={require('./assets/recieve.png')} style={styles.btnimg}/></View>
-          <Text>Sent</Text>
+          <Text  style={styles.btntxt}>Recieve</Text>
         </View>
 
         <View style={styles.transactions}>
 
         <View style={styles.buttons}><Image source={require('./assets/loan.png')} style={styles.btnimg}/></View>
-          <Text>Sent</Text>
+          <Text  style={styles.btntxt}>Loan</Text>
         </View>
 
         <View style={styles.transactions}>
 
         <View style={styles.buttons}><Image source={require('./assets/topUp.png')} style={styles.btnimg}/></View>
-          <Text>Sent</Text>
+          <Text  style={styles.btntxt}>Topup</Text>
         </View>
                 
         
@@ -110,5 +110,10 @@ const styles = StyleSheet.create({
  btnimg: {
   //height: '200',
   //width: '200'
+ },
+ btntxt: {
+  marginTop: 5,
+  fontWeight: '300',
+  fontSize: 17
  },
 });
